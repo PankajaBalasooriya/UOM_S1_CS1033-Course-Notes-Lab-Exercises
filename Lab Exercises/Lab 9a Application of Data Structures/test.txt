@@ -1,0 +1,12 @@
+root = Node(('OPERAND', 1))
+root = root.insert(('OPERATOR', '+'), False)
+root = root.insert(('OPERAND', 2), False)
+root = root.insert(('OPERATOR', '*'), True)
+root = root.insert(('OPERAND', 3), False)
+root = root.insert(('OPERATOR', '+'), False)
+root = root.insert(('OPERAND', 3), False)
+root = root.insert(('OPERATOR', '^'), False)
+root = root.insert(('OPERAND', 2), False)
+root.get_output()
+
+# expected ans = 100

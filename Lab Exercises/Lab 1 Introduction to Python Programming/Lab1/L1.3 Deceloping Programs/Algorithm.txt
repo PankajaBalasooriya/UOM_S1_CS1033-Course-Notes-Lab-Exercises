@@ -1,0 +1,17 @@
+BEGIN
+    INPUT a,b,c
+    discriminant ← b*b -4*a*c
+
+    IF discriminant > 0 THEN
+        root1  ← (-b + sqrt(discriminant))/(2*a)
+        root2  ← (-b - sqrt(discriminant))/(2*a)
+        OUTPUT "Roots are: " root1, root2
+    ElSE IF discriminant = 0 THEn
+        root  ← (-b)/(2*a)
+    ELSE
+        OUTPUT "There are no real roots for the equation."
+    ENDIF
+END
+
+
+

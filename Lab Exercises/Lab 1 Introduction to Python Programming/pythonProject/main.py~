@@ -1,0 +1,19 @@
+def float_to_binary(float_num):
+    # Convert the float to hexadecimal
+    hex_num = float_num.hex()
+
+    # Convert the hexadecimal to a float value
+    float_value = float.fromhex(hex_num)
+
+    # Convert the float to binary
+    binary_num = bin(int(float_value * (2**100)))[2:]
+
+    # Add leading zeros to ensure 100 decimal points
+    binary_num = binary_num.zfill(100)
+
+    return binary_num
+
+# Example usage
+float_number = 0.1
+binary_representation = float_to_binary(float_number)
+print(binary_representation)
